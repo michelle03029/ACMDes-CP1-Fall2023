@@ -42,7 +42,7 @@ body {
     padding: 0 4px;
   }
   
-  /* Create four equal columns that sits next to each other */
+  /* Four equal columns that sits next to each other */
   .column {
     flex: 25%;
     max-width: 25%;
@@ -73,12 +73,12 @@ body {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 720px) {
     main, header {
         width: 768px;
     }
     img {
-        width: 200px;
+        width: 800px;
     }
     nav ul li {
         display: inline-block;
@@ -102,7 +102,7 @@ body {
         width: 768px;
     }
     img {
-        width: 200px;
+        width: 1000px;
     }
     nav ul li {
         display: inline-block;
@@ -114,7 +114,7 @@ body {
         font-size: 42px;
     }
     body {
-        font-family: Arial, sans-serif;
+        font-family: "Courier", monospace;
     }
     .textcolor {
         color: rgb(96, 187, 151);
@@ -128,7 +128,7 @@ body {
     }
   }
   
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  /* Responsive layout - makes the two columns stack on top of each other */
   @media screen and (max-width: 600px) {
     .column {
       flex: 100%;
