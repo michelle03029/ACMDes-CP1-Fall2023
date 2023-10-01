@@ -1,5 +1,45 @@
-.responsive {
-    height: auto;
-    width: 25%;
-    float: left;
+* {
+    box-sizing: border-box;
   }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+  }
+  
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-bottom: 20px;
+    vertical-align: middle;
+    width: 100%;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+  .column img:hover {
+    opacity: 1;
+  }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+  .container {
+    position: relative;
+    display: none;
+  }
+

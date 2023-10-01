@@ -7,46 +7,30 @@
     <!-- Stylesheets -->
     <link href="style.css" rel="stylesheet">
 
-    <title>Week 3: Corgi Homework</title>
+    <title>Week 3: Image Gallery</title>
 </head>
 <body>
-    <h1>Select one of the images to show a large version
+    <h1><div style="text-align:center">Select one of the images to expand</div>
+    <br>
     <header>
-        <div id="ImageOne">
-        <div class="responsive">
-            <button id="btnShowImage">
-            <img src="corgi.jpg" alt="buttonpng" border="0" class="responsive" id="img"/>
-        </button>
-        </div>
-        </div>
-        
-        <div id="ImageTwo">
-            <div class="responsive">
-            <button id="btnShowImage">
-            <img src="corgi2.jpg" alt="buttonpng" border="0" class="responsive" id="img"/>
-        </button>
-        </div>
-        </div>
-
-        <div id="ImageThree">
-            <div class="responsive">
-            <button id="btnShowImage">
-             <img src="corgi3.webp" alt="buttonpng" border="0" class="responsive" id="img"/>
-        </button>
-        </div>
+        <div class="row">
+            <div class="column">
+              <img src="corgi.jpg" alt="Corgi 1" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="corgi2.jpg" alt="Corgi 2" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="corgi3.jpg" alt="Corgi 3" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="corgi4.jpg" alt="Corgi 4" onclick="myFunction(this);">
+            </div>
         </div>
 
-        <div id="ImageFour">
-            <div class="responsive">
-            <button id="btnShowImage">
-             <img src="corgi4.webp" alt="buttonpng" border="0" class="responsive" id="img"/>
-        </button>
+        <div class="container">
+            <img id="expandedImg" style="width:100%">
         </div>
-        </div>
-
-        </div>
-    <main>
-        <div id="divOne">Image Show Here</div>
     </main>
     
     </h1>

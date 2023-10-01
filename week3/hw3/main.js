@@ -1,11 +1,5 @@
-let firstDiv = document.getElementById("divOne")
-let imageChangeButton = document.getElementById("btnShowImage")
-
-console.log(imageChangeButton)
-
-let addImage = function(){
-    let img = document.getElementById("img");
-    firstDiv.appendChild(img)
+function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    expandImg.src = imgs.src;
+    expandImg.parentElement.style.display = "block";
 }
-
-imageChangeButton.addEventListener("click", addImage)
