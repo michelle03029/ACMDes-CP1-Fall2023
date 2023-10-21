@@ -1,0 +1,27 @@
+@media (min-width: 360px) {
+    img {
+        width: 200px;
+    }
+}
+
+@media (min-width: 720px) {
+    img {
+        width: 800px;
+    }
+}
+
+@media (min-width: 1600px) {
+    img {
+        width: 1000px;
+    }
+}
+
+#parent {
+    width: 75%;
+  }
+
+body {
+    background-color: rgb(228, 228, 228);
+    font-family: "Helvetica";
+    line-height: 140%;
+}
