@@ -13,24 +13,33 @@
     <h1><div style="text-align:center">Select one of the images to expand</div>
     <br>
     <header>
-        <div class="row">
-            <div class="column">
-              <img src="corgi.jpg" alt="Corgi 1" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-              <img src="corgi2.jpg" alt="Corgi 2" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-              <img src="corgi3.jpg" alt="Corgi 3" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-              <img src="corgi4.jpg" alt="Corgi 4" onclick="myFunction(this);">
-            </div>
-        </div>
+        <!-- The grid: four columns -->
+<div class="row">
+  <div class="column">
+    <img src="corgi.jpg" alt="corgi" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="corgi2.jpg" alt="corgi2" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="corgi3.jpg" alt="corgi3" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="corgi4.jpg" alt="corgi4" onclick="myFunction(this);">
+  </div>
+</div>
 
-        <div class="container">
-            <img id="expandedImg" style="width:100%">
-        </div>
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>
     </main>
     
     </h1>
