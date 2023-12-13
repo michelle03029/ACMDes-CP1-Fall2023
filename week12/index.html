@@ -7,7 +7,7 @@
   <body>
     <div id="parent">
     <header>
-        <h1>Find Your Interface HW</h1>
+        <br><h1>Find Your Interface HW</h1>
 
         <br><h2>Ideas</h2>
         Two ideas I have for my "interface" include opening your hand and having random food items generate. Or having AI recognize the foods in one's fridge.</a>
@@ -29,8 +29,26 @@
     
         <br><br><img src="Flow Chart.png" alt="">
 
+        <br><h2>Adding in further interactions</h2>
+        In class, the professor also helped walk me through how we might have random fruits appear in a good pacing via the code. I was able to add this in based on a particle example he showed. Particle example can be found  <a href="https://openprocessing.org/sketch/1304249"> here. </a> I was able to embed the fruits via creating a fruit class and loading in images found online of a watermelon. Then having the fruit randomly produce via an array. 
+
+        <br><br><img src="random fruits.png" alt="">
+
+        <br><br> Next, I needed to add in the interaction of having the fruit disappear off the screen when the user's hand interacts with it. I tried this code below but it still was not working as intended. It doesn't seem like the user interacting the fruit does anything, neither does the mouse. After talking it through with my professor, I realized that this touch function is for mobile devices and not for the handpose interaction.
+
+        <br><br><img src="add in touch.png" alt="">
+
+        <br><h2>Finishing up the prototype</h2>
+        The main thing I was missing in the code is defining the positioning of the pointer finger and when the positioning is around 10px away from the fruit, the fruit should disappear from the screen. And then also generating more fruit types in the array. I ended up adding in two more fruits of strawberries and pears apart from the watermelon.
+
+        Lastly, I decided to turn off the camera as it was mirroring and flipping the hand pose which was confusing when interacting with the fruits. I also added in a circle to the tip of the pointer finger to make it easier for the user to see where they are pointing to.
+
+        <br><br><img src="add more fruits.png" alt="">
+
         <br><h2>Final Interface</h2>
-        Here is the <a href="https://editor.p5js.org/pan8915/sketches/BJAHU1W6">final prototype.</a>
+        Here is the <a href="https://editor.p5js.org/michelle03029/sketches/K12HIpdh0">final prototype.</a> You can play the game by using your pointer finger to "slice" the fruit. When your pointer finger interacts with the fruit, the fruit disappears off screen.
+
+        <br><br><img src="final prototype.png" alt="">
 
 
     </header>
